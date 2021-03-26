@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OJJO</title>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="grid.css">
+
+</head>
+
+<body>
+
+    <div class="amodal">
+        <div class="amodal__overlay">
+            <div class="amodal__window">
+
+                <div class="amodal__tabs-nav">
+                    <div class="amodal__header">
+                        <a class="amodal__tabs-btn" href="#m-login">Вход</a>
+                        <a class="amodal__tabs-btn" href="#m-registration">Регистрация</a>
+                    </div>
+                </div>
+                <div class="amodal__tabs-content">
+                    <div class="amodal__body">
+                        <div class="amodal__tabs-item" id="m-login"></div>
+                        <div class="amodal__tabs-item" id="m-registration"></div>
+                    </div>
+                    <div class="amodal__footer"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Header -->
+    <header class="header" data-shift>
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a class="header__logo-link" href="#">
+                        <svg class="header__logo-img">
+                            <use xlink:href="img/logo.svg#logo">
+                        </svg>
+                    </a>
+                </div>
+
+                <button class="hamburger" type="button">
+                    <span class="hamburger__box">
+                        <span class="hamburger__box-line"></span>
+                    </span>
+                </button>
+
+                <div class="header__inner-wrapper">
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link"><span>Контрагентам</span></a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link"><span>Дизайнерам</span></a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="#" class="header__nav-link"><span>Вакансии</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__userPanel">
+                        <div class="header__userPanel-wrapper-search" id="search-btn">
+                            <a class="header__userPanel-search" href="#">
+                                <svg class="icon icon--search">
+                                    <use xlink:href="img/icon-sprite.svg#search">
+                                </svg>
+                                <span class="header__userPanel-name">Поиск</span>
+                            </a>
+                        </div>
+
+                        <div class="header__userPanel-wrapper-login">
+                            <a class="header__userPanel-login" href="#">
+                                <span class="header__userPanel-name" id="login-btn">Вход/Регистрация</span>
+                            </a>
+                        </div>
+
+                        <div class="header__userPanel-wrapper-icons">
+                            <div class="header__userPanel-icons">
+                                <a class="header__userPanel-link" href="#">
+                                    <svg class="icon icon--user">
+                                        <use xlink:href="img/icon-sprite.svg#user">
+                                    </svg>
+                                </a>
+
+                                <a class="header__userPanel-link" href="#">
+                                    <svg class="icon icon--favorite">
+                                        <use xlink:href="img/icon-sprite.svg#favorite">
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social header__social">
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--youtube">
+                                <use xlink:href="img/icon-sprite.svg#youtube">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--vk">
+                                <use xlink:href="img/icon-sprite.svg#vk">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--facebook">
+                                <use xlink:href="img/icon-sprite.svg#facebook">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--twitter">
+                                <use xlink:href="img/icon-sprite.svg#twitter">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--ello">
+                                <use xlink:href="img/icon-sprite.svg#ello">
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /Header -->
+
+    <!-- Banner -->
+    <section class="banner-section">
+        <h1 class="banner__title">Долго, дорого, богато!</h1>
+        <a class="btn btn--gray-b banner__btn" href="#">Каталог изделий</a>
+
+        <div class="banner__brands">
+            <div class="container">
+                <div class="banner__brands-row">
+                    <div class="banner__brands-column">
+                        <a href="#">
+                            <img src="img/banner-brand.png" alt="Бренд">
+                        </a>
+                    </div>
+                    <div class="banner__brands-column">
+                        <a href="#">
+                            <img src="img/banner-brand.png" alt="Бренд">
+                        </a>
+                    </div>
+                    <div class="banner__brands-column">
+                        <a href="#">
+                            <img src="img/banner-brand.png" alt="Бренд">
+                        </a>
+                    </div>
+                    <div class="banner__brands-column">
+                        <a href="#">
+                            <img src="img/banner-brand.png" alt="Бренд">
+                        </a>
+                    </div>
+                    <div class="banner__brands-column">
+                        <a href="#">
+                            <img src="img/banner-brand.png" alt="Бренд">
+                        </a>
+                    </div>
+                    <div class="banner__brands-column">
+                        <a href="#">
+                            <img src="img/banner-brand.png" alt="Бренд">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Banner -->
+
+    <!-- Catalog -->
+    <section class="catalog-section section">
+        <div class="container">
+
+            <h3 class="suptitle-section">К мероприятиям</h3>
+            <h2 class="title-section">Настоящая красота здесь!</h2>
+
+            <div class="tabs">
+                <div class="tabs__nav">
+                    <a class="tabs__nav-btn" href="#tab-wedding">
+                        <span>Свадьба</span>
+                    </a>
+                    <a class="tabs__nav-btn" href="#tab-husband">
+                        <span>Мужу</span>
+                    </a>
+                    <a class="tabs__nav-btn" href="#tab-wife">
+                        <span>Жене</span>
+                    </a>
+                    <a class="tabs__nav-btn" href="#tab-partner">
+                        <span>Партнеру</span>
+                    </a>
+                    <a class="tabs__nav-btn" href="#tab-colection">
+                        <span>Коллекции</span>
+                    </a>
+                    <a class="tabs__nav-btn" href="#tab-rare">
+                        <span>Редкость</span>
+                    </a>
+                </div>
+
+                <div class="tabs__content">
+                    <div class="tabs__content-list" id="tab-wedding">
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/1.jpg" alt="Кольца">
+                                <span class="tabs__content-name">Кольца</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/2.jpg" alt="Серьги">
+                                <span class="tabs__content-name">Серьги</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/3.jpg" alt="Подвески">
+                                <span class="tabs__content-name">Подвески</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/4.jpg" alt="Запонки">
+                                <span class="tabs__content-name">Запонки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/5.jpg" alt="Браслеты">
+                                <span class="tabs__content-name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/6.jpg" alt="Часы">
+                                <span class="tabs__content-name">Часы</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content-list" id="tab-husband">
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/1.jpg" alt="Запонки">
+                                <span class="tabs__content-name">Запонки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/2.jpg" alt="Крестики">
+                                <span class="tabs__content-name">Крестики</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/3.jpg" alt="Перстни">
+                                <span class="tabs__content-name">Перстни</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/4.jpg" alt="Браслеты">
+                                <span class="tabs__content-name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/5.jpg" alt="Цепочки">
+                                <span class="tabs__content-name">Цепочки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/6.jpg" alt="Наборы">
+                                <span class="tabs__content-name">Наборы</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content-list" id="tab-wife">
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/1.jpg" alt="Кольца">
+                                <span class="tabs__content-name">Кольца</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/2.jpg" alt="Серьги">
+                                <span class="tabs__content-name">Серьги</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/3.jpg" alt="Подвески">
+                                <span class="tabs__content-name">Подвески</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/4.jpg" alt="Запонки">
+                                <span class="tabs__content-name">Запонки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/5.jpg" alt="Браслеты">
+                                <span class="tabs__content-name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/6.jpg" alt="Часы">
+                                <span class="tabs__content-name">Часы</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content-list" id="tab-partner">
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/1.jpg" alt="Запонки">
+                                <span class="tabs__content-name">Запонки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/2.jpg" alt="Крестики">
+                                <span class="tabs__content-name">Крестики</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/3.jpg" alt="Перстни">
+                                <span class="tabs__content-name">Перстни</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/4.jpg" alt="Браслеты">
+                                <span class="tabs__content-name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/5.jpg" alt="Цепочки">
+                                <span class="tabs__content-name">Цепочки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/6.jpg" alt="Наборы">
+                                <span class="tabs__content-name">Наборы</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content-list" id="tab-colection">
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/1.jpg" alt="Кольца">
+                                <span class="tabs__content-name">Кольца</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/2.jpg" alt="Серьги">
+                                <span class="tabs__content-name">Серьги</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/3.jpg" alt="Подвески">
+                                <span class="tabs__content-name">Подвески</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/4.jpg" alt="Запонки">
+                                <span class="tabs__content-name">Запонки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/5.jpg" alt="Браслеты">
+                                <span class="tabs__content-name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/wedding/6.jpg" alt="Часы">
+                                <span class="tabs__content-name">Часы</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content-list" id="tab-rare">
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/1.jpg" alt="Запонки">
+                                <span class="tabs__content-name">Запонки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/2.jpg" alt="Крестики">
+                                <span class="tabs__content-name">Крестики</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/3.jpg" alt="Перстни">
+                                <span class="tabs__content-name">Перстни</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/4.jpg" alt="Браслеты">
+                                <span class="tabs__content-name">Браслеты</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/5.jpg" alt="Цепочки">
+                                <span class="tabs__content-name">Цепочки</span>
+                            </a>
+                        </div>
+                        <div class="tabs__content-item">
+                            <a class="tabs__content-link" href="#">
+                                <img class="tabs__content-img" src="/img/catalog/husband/6.jpg" alt="Наборы">
+                                <span class="tabs__content-name">Наборы</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Catalog -->
+
+    <!-- Showroom -->
+    <section class="showroom-section section color-w">
+        <div class="container">
+            <h3 class="suptitle-section">Не знаете, что выбрать?</h3>
+            <h2 class="title-section">Посетите наши салоны в Москве</h2>
+
+            <p class="showroom-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut duis tortor
+                vitae
+                pellentesque egestas quam
+                pulvinar. Pellentesque porttitor velit sit pellentesque. Suspendisse donec pretium id dignissim.
+                Dignissim ultrices eget orci viverra. Egestas quis et ut ultrices imperdiet lectus nulla tempus.
+                Pharetra lorem sem purus nisi libero viverra ipsum.
+            </p>
+            <a class="btn btn--white" href="#">наши салоны</a>
+        </div>
+    </section>
+    <!-- /Showroom -->
+
+    <!-- Article -->
+    <section class="article-section section">
+        <div class="container">
+            <h3 class="suptitle-section">Полезные статьи</h3>
+            <h2 class="title-section">Лучшие советы по подбору дорогих подарков</h2>
+
+            <div class="article-section__list">
+                <div class="article-section__item">
+                    <a class="article-section__link" href="#">
+                        <img class="article-section__img" src="/img/article/1.jpg"
+                            alt="Как выбрать часы для будущей жены">
+                        <span class="article-section__title">
+                            Как выбрать часы для своей будущей жены
+                        </span>
+                    </a>
+                </div>
+                <div class="article-section__item">
+                    <a class="article-section__link" href="#">
+                        <img class="article-section__img" src="/img/article/2.jpg"
+                            alt="Запонки для мужа: 7 правил покупки аксессуара">
+                        <span class="article-section__title">
+                            Запонки для мужа: 7 ключевых правил покупки аксессуара
+                        </span>
+                    </a>
+                </div>
+                <div class="article-section__item">
+                    <a class="article-section__link" href="#">
+                        <img class="article-section__img" src="/img/article/3.jpg" alt="Как выбрать кольца молодоженам">
+                        <span class="article-section__title">
+                            Как выбрать обручальные кольца молодоженам
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <a class="btn btn--gray" href="#">Читать наш блог</a>
+        </div>
+
+    </section>
+    <!-- /Article -->
+
+    <!-- Social -->
+    <section class="social-section">
+        <div class="container">
+            <h3 class="suptitle-section">#ojjo_jewerly</h3>
+            <h2 class="title-section">Мы в социальных сетях</h2>
+
+            <div class="social-section__row">
+                <div class="social-section__column">
+                    <div class="social-section__video">
+                        <video class="video" src="video/1.mp4" poster="img/social/1.jpg" loop></video>
+
+                        <div class="social-section__video-control">
+                            <svg class="icon icon--play">
+                                <use xlink:href="img/icon-sprite.svg#play">
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="social-section__img-wrapper">
+                        <div class="social-section__img-item">
+                            <a class="social-section__img-link" href="#">
+                                <img class="social-section__img-image" src="img/social/2.jpg" alt="Часы">
+                            </a>
+                        </div>
+                        <div class="social-section__img-item">
+                            <a class="social-section__img-link" href="#">
+                                <img class="social-section__img-image" src="img/social/3.jpg" alt="Часы">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-section__column">
+                    <div class="social-section__img-wrapper">
+                        <div class="social-section__img-item">
+                            <a class="social-section__img-link" href="#">
+                                <img class="social-section__img-image" src="img/social/4.jpg" alt="Очки">
+                            </a>
+                        </div>
+                        <div class="social-section__img-item">
+                            <a class="social-section__img-link" href="#">
+                                <img class="social-section__img-image" src="img/social/5.jpg" alt="Сапфир">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-section__video">
+                        <video class="video" src="video/1.mp4" poster="img/social/6.jpg" loop></video>
+
+                        <div class="social-section__video-control">
+                            <svg class="icon icon--play">
+                                <use xlink:href="img/icon-sprite.svg#play">
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Social -->
+
+    <!-- Newsletter -->
+    <section class="newsletter-section section color-w">
+        <div class="container">
+            <h3 class="suptitle-section">Полезные советы и персональный предложения</h3>
+            <h2 class="title-section">Эксклюзивная рассылка</h2>
+
+            <div class="newsletter-section__inner">
+                <ul class="newsletter-section__list">
+                    <li class="newsletter-section__item">
+                        <svg class="icon icon--newsletterArrow">
+                            <use xlink:href="img/icon-sprite.svg#newsletterArrow">
+                        </svg>
+                        <span class="newsletter-section__title">Личный менеджер</span>
+                    </li>
+
+                    <li class="newsletter-section__item">
+                        <svg class="icon icon--newsletterArrow">
+                            <use xlink:href="img/icon-sprite.svg#newsletterArrow">
+                        </svg>
+                        <span class="newsletter-section__title">Доставка и оформление</span>
+                    </li>
+
+                    <li class="newsletter-section__item">
+                        <svg class="icon icon--newsletterArrow">
+                            <use xlink:href="img/icon-sprite.svg#newsletterArrow">
+                        </svg>
+                        <span class="newsletter-section__title">Индивидуальный дизайн</span>
+                    </li>
+                </ul>
+
+                <div class="newsletter-section__form-wrapper">
+                    <form action="">
+                        <input class="newsletter-section__form-input" type="text" placeholder="Ваш e-mail">
+                        <button class="btn btn--gray">Отправить</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /Newsletter -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Полезные ссылки</h3>
+
+                    <ul class="footer__column-list">
+                        <li class="footer__column-item">
+                            <a class="footer__column-link" href="#"><span>Доставка</span></a>
+                        </li>
+                        <li class="footer__column-item">
+                            <a class="footer__column-link" href="#"><span>Оплата</span></a>
+                        </li>
+                        <li class="footer__column-item">
+                            <a class="footer__column-link" href="#"><span>Акции</span></a>
+                        </li>
+                        <li class="footer__column-item">
+                            <a class="footer__column-link" href="#"><span>Политика конфиденциальности</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Оплата</h3>
+
+                    <p class="footer__column-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ullamcorper justo, nec, pellentesque.</p>
+
+                    <a class="footer__payment-system" href="#"><img src="img/visa.png" alt="Платежная сисема ВИЗА"></a>
+                    <a class="footer__payment-system" href="#"><img src="img/mastercard.png"
+                            alt="Платежная сисема Мастер Кард"></a>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Контакты</h3>
+
+                    <ul class="footer__column-list">
+                        <li class="footer__column-item">
+                            <svg class="icon icon--phone">
+                                <use xlink:href="img/icon-sprite.svg#phone">
+                            </svg>
+                            <a class="footer__column-link" href="tel:+78122345655"><span>8 (812) 234-56-55</span></a>
+                        </li>
+                        <li class="footer__column-item">
+                            <svg class="icon icon--phone">
+                                <use xlink:href="img/icon-sprite.svg#phone">
+                            </svg>
+                            <a class="footer__column-link" href="tel:+78122345655"><span>8 (812) 234-56-55</span></a>
+                        </li>
+                        <li class="footer__column-item">
+                            <svg class="icon icon--phone">
+                                <use xlink:href="img/icon-sprite.svg#mail">
+                            </svg>
+                            <a class="footer__column-link" href="mailto:ojjo@ojjo.ru"><span>ojjo@ojjo.ru</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <h3 class="footer__column-title">Социальные сети</h3>
+
+                    <p class="footer__column-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ullamcorper justo, nec, pellentesque.</p>
+
+                    <div class="social footer__social">
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--youtube">
+                                <use xlink:href="img/icon-sprite.svg#youtube">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--vk">
+                                <use xlink:href="img/icon-sprite.svg#vk">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--facebook">
+                                <use xlink:href="img/icon-sprite.svg#facebook">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--twitter">
+                                <use xlink:href="img/icon-sprite.svg#twitter">
+                            </svg>
+                        </a>
+                        <a class="social__link" href="#">
+                            <svg class="icon icon--ello">
+                                <use xlink:href="img/icon-sprite.svg#ello">
+                            </svg>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="footer__copyright">
+                <span>(c) 2020 OJJO jewelry</span>
+                <a href="#"><span>Договор публичной офферты</span></a>
+                <a href="#"><span>Контрагентам</span></a>
+                <span>Сделано Тарасовым Антоном</span>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+
+
+
+
+
+
+
+
+
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

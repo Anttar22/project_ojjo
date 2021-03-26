@@ -1,0 +1,330 @@
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+html.disable-scroll {
+    overflow: hidden;
+
+    & body {
+        overflow-y: scroll;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $main-color;
+    font-family: Gilroy;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1110px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 100px 0 120px;
+    text-align: center;
+    
+    @media screen and (max-width: $breakpoints-sm-max) {
+        padding: 50px 0 60px;
+    }
+}
+
+.suptitle-section {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @media screen and (max-width: $breakpoints-sm-max) {
+        font-size: 17px;
+    }
+}
+.title-section {
+    font-family: Noto Serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 41px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (max-width: $breakpoints-sm-max) {
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+}
+.color-w {
+    color: #fff;
+}
+
+a {
+    span {
+        position: relative;
+    
+        &::before {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            transform: scale(0);
+            transition: transform .25s ease-in;
+        }
+    }
+
+    &:hover span::before {
+            transform: scale(1);
+    }
+}
+
+.footer a span::before {
+    background-color: $main-color;
+}
+
+.icon {
+    fill: white;
+
+    &--search {
+        width: 18px;
+        height: 18px;
+        margin-right: 16px;
+    }
+
+    &--user {
+        width: 16px;
+        height: 16px;
+
+        @media screen and (max-width: $breakpoints-md-max) {
+            width: 33px;
+            height: 33px;
+        }
+    }
+
+    &--favorite {
+        width: 16px;
+        height: 14px;
+
+        @media screen and (max-width: $breakpoints-md-max) {
+            width: 36px;
+            height: 32px;
+        }
+    }
+
+    &--youtube {
+        width: 23px;
+        height: 16px;
+    }
+    &--vk {
+        width: 24px;
+        height: 14px;
+    }
+    &--facebook {
+        width: 10px;
+        height: 19px;
+    }
+    &--twitter {
+        width: 20px;
+        height: 17px;
+    }
+    &--ello {
+        width: 14px;
+        height: 16px;
+    }
+
+    &--play {
+        width: 70px;
+        height: 70px;
+    }
+
+    &--newsletterArrow {
+        width: 17px;
+        height: 17px;
+    }
+
+    &--phone {
+        fill: $main-color;
+        width: 20px;
+        height: 16px;
+    }
+
+    &--mail {
+        fill: $main-color;
+        width: 18px;
+        height: 12px;
+    }
+
+    &--cross {
+        fill: $main-color;
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -7px;
+
+    &__link {
+        padding: 7px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.header__social {
+    display: none;
+    max-width: 305px;
+
+    @media screen and (max-width: $breakpoints-md-max) {
+        display: flex;
+    }  
+}
+.footer__social {
+    max-width: 215px;
+    svg {
+        fill: $main-color;
+    }
+}
+
+/* Hamburger */
+.hamburger {
+    position: absolute;
+    top: -25px;
+    right: 14px;
+
+    display: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    transition: opacity 0.15s linear;
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    outline: none;
+    z-index: 5;
+
+    @media screen and (max-width: $breakpoints-md-max) {
+        display: block;
+    }
+
+    @media screen and (max-width: 375px) {
+        right: -10px;
+    }
+    &:hover {
+        opacity: 0.7;
+    }
+
+    &__box {
+        display: inline-block;
+        width: 40px;
+        height: 24px;
+        position: relative;
+
+        &-line {
+            display: inline-block;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: background-color .125s ease-in .175s;
+        }
+
+        &-line,
+        &-line::before,
+        &-line::after {
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+
+        &-line::before,
+        &-line::after {
+            content: "";
+            transition: transform .15s ease;
+        }
+
+        &-line::before {
+            top: -10px;
+            left: 0;
+            transition: 
+            transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335),
+            top 0.05s 0.125s linear,
+            left 0.125s 0.175s ease-in;
+        }
+
+        &-line::after {
+            top: 10px;
+            right: 0;
+            transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
+        }
+    }
+
+    &.is-active &__box-line {
+        transition: background .1s linear;
+        background-color: transparent;
+    }
+
+    &.is-active &__box-line::before {
+        left: -80px;
+        top: -80px;
+        transform: translate3d(80px, 80px, 0) rotate(45deg);
+        transition: 
+        left 0.125s ease-out,
+        top 0.05s 0.125s linear,
+        transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); 
+    }
+
+    &.is-active &__box-line::after {
+        right: -80px;
+        top: -80px;
+        transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+        transition: 
+            right 0.125s ease-out,
+            top 0.05s 0.125s linear,
+            transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+}
+/* /Hamburger */
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid transparent;
+    cursor: pointer;
+
+    &--gray {
+        background: $main-color;
+
+        color: #fff;
+    }
+
+    &--gray-b {
+        background: $main-color;
+        border-color: #fff;
+        color: #fff;
+    }
+
+    &--white {
+        background-color: #fff;
+        border-color:$main-color;
+        color: $main-color;
+    }
+}
+/* /Button */
